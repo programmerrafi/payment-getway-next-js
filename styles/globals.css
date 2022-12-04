@@ -32,8 +32,8 @@ a {
 @media screen and (max-width: 1024px) {
   /* TODO: Edit here now that */
   .sub-menu-head .sub-menu {
-    position: unset;
-    width: 100%;
+    /* position: unset; */
+    /* width: 100%;
     opacity: 1;
     visibility: visible;
     transform: translate(0%);
@@ -41,7 +41,7 @@ a {
     -moz-transform: translate(0%);
     -ms-transform: translate(0%);
     -o-transform: translate(0%);
-    display: none;
+    display: none; */
   }
 }
 /* =================Navbar end======================== */

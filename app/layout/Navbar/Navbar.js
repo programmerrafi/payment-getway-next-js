@@ -45,7 +45,8 @@ const Navbar = () => {
                   src="/icons/menu-logo.png"
                   width="170"
                   height="70"
-                  objectFit="contain"
+                  alt="Logo"
+                  className="object-contain"
                 />
               </div>
             </Link>
