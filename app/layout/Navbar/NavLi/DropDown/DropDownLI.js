@@ -5,26 +5,25 @@ import { pages, contacts } from "../../../../data/dropDownData";
 import Link from "next/link";
 
 const DropDownLI = ({ text }) => {
-  const [navToggele, setnavToggele] = useState("");
-  const handleToggel = () => {
-    if (navToggele === "") {
-      setnavToggele("toggel-button");
-    } else if (navToggele === "toggel-button") {
-      setnavToggele("");
-    }
-  };
+  const [navToggle, setNavToggle] = useState(false);
 
   return (
-    <li className="sub-menu-head lg:py-[18px]" onClick={handleToggel}>
+    <li
+      className="group sub-menu-head lg:py-9 cursor-pointer relative duration-300 ease-linear"
+      onClick={() => setNavToggle(!navToggle)}
+    >
       <Link href="#">
-        <div className="hover:text-[#6b5eff] transition-all flex gap-1 text-colorWhite uppercase">
+        <div className="flex gap-1 items-center text-navTextColor text-[15px] font-RadHatText capitalize">
           {text}
-          <IoIosArrowDown className="arrow" size={18} />
+          <IoIosArrowDown
+            className="duration-300 ease-linear group-hover:rotate-180"
+            size={17}
+          />
         </div>
       </Link>
       <SUbli
         pages={text === "PAGES" ? pages : contacts}
-        navToggele={navToggele}
+        navToggle={navToggle}
         page
       />
     </li>

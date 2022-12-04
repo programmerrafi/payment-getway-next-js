@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        Montserrat: ["Montserrat", "sans-serif"],
+        RadHatText: ["Red Hat Text", "sans-serif"],
+      },
       colors: {
         bgMain: "#151518",
         colorPrimary: "#002855",
@@ -15,7 +19,7 @@ module.exports = {
         colorAccent: "#61CE70",
         colorWhite: "#F4F4F4",
         blackPrimary: "#030304",
-        colorText: "#8176FF",
+        navTextColor: "#F1F3F6",
         btnSecondary: "#534D9F",
         blackSecondary: "#151518",
         black3: "#1C1B1B",

@@ -37,20 +37,20 @@ const Navbar = () => {
         }`}
       > */}
         <nav className={`container`}>
-          <div className="flex justify-between items-center w-full py-4">
+          <div className="flex justify-between items-center w-full py-5 lg:py-0">
             {/* Logo */}
             <Link href="/" className="hidden md:block">
               <div className="">
                 <Image
                   src="/icons/menu-logo.png"
-                  width="175"
+                  width="170"
                   height="70"
                   objectFit="contain"
                 />
               </div>
             </Link>
             {/* Logo mobile */}
-            <Link href="/" className="block md:hidden">
+            {/* <Link href="/" className="block md:hidden">
               <div className="w-[65px] sm:w-[90px] object-contain">
                 <img
                   // src="/icons/logo-mobile.png"
@@ -58,7 +58,7 @@ const Navbar = () => {
                   className="w-full h-full"
                 />
               </div>
-            </Link>
+            </Link> */}
             {/* Menu */}
             <div
               className="menu lg:hidden cursor-pointer"
@@ -75,7 +75,7 @@ const Navbar = () => {
                 "absolute bg-teal-700 !left-[-350px] lg:!left-0 transition-all lg:!transition-none !duration-[200ms] ease-in-out lg:!duration-[0ms] z-[1000]"
               } absolute top-0 left-0 bg-pink-400 lg:relative lg:top-0 z-[999] lg:justify-between w-[350px] h-screen lg:h-auto flex-col flex lg:flex lg:w-auto lg:order-1 lg:bg-transparent transition-all duration-[1500ms] lg:!transition-none ease-in-out lg:!duration-[0ms]`}
             >
-              {/* ==== Menu Close Icon & Menu Logo==== */}
+              {/* ==== Menu Close Icon & Menu Logo for mobile ==== */}
               <div className="flex lg:hidden py-8 px-4 justify-between">
                 <img
                   // src="/icons/nav-logo.png"
@@ -91,32 +91,20 @@ const Navbar = () => {
                 </div>
               </div>
               {/* Nav Menu */}
-              <div className={`nav-menu`}>
+              <div className={`nav-menu flex items-center lg:gap-20`}>
                 <ul className="main-menu pl-10 lg:pl-0 flex-col lg:flex-row lg:flex lg:items-center lg:flex-wrap gap-7 space-y-10 lg:space-y-0">
-                  <NavLi text="HOME" />
-                  <NavLi text="ABOUT US" />
-                  <NavLi text="SERVICE" />
-
-                  {/* Drop Down start */}
-                  <DropDownLI text="PAGES" />
-                  <DropDownLI text="CONTACT US" />
-                  {/* Drop Down end */}
-                  {/* Button */}
-                  <div className="hidden lg:block">
-                    <ButtonC title="GET STARTED" text="12px" />
-                  </div>
+                  <NavLi text="Home" />
+                  <NavLi text="About" />
+                  <DropDownLI text="Services" />
+                  <DropDownLI text="Features" />
+                  <NavLi text="Contact" />
                 </ul>
+                {/* Button */}
+                <div className="hidden lg:block">
+                  <ButtonC title="GET STARTED" text="12px" />
+                </div>
               </div>
             </div>
-
-            {/* BackDrop */}
-            {/* <div
-                className={`${
-                  !open &&
-                  "absolute lg:hidden bg-teal-700 left-[-1020px] lg:left-0 transition-all lg:!transition-none !duration-[1200ms] ease-in-out lg:!duration-[0ms] z-[995]"
-                } absolute top-0 left-0 bg-slate-800 opacity-60 lg:relative lg:top-0 z-[994] lg:justify-between w-screen h-screen lg:h-auto flex-col flex lg:flex lg:w-auto lg:order-1 lg:bg-transparent transition-all lg:!transition-none duration-[600ms] ease-in-out lg:!duration-[0ms]`}
-                onClick={() => setOpen(false)}
-              ></div> */}
           </div>
         </nav>
       </header>

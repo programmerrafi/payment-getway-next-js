@@ -1,5 +1,7 @@
 /* Google All Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Text:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -23,76 +25,10 @@ a {
 
 /* Wrapper container */
 .container {
-  @apply !max-w-[1150px] mx-auto px-5 lg:px-0;
+  @apply !max-w-[1150px] mx-auto px-5 lg:px-[2.5px];
 }
 
 /* ===============Navbar======================= */
-
-.nav-menu .main-menu li {
-  color: #f4f4f4;
-  font-size: 14px;
-  font-weight: 600;
-}
-.sub-menu-head {
-  position: relative;
-  transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -ms-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-}
-.sub-menu-head .sub-menu {
-  width: max-content;
-  position: absolute;
-  left: 0;
-  top: 4rem;
-  opacity: 0;
-  padding: 0.9rem 0.5rem;
-  visibility: hidden;
-  border-radius: 0.5rem;
-  -webkit-border-radius: 0.5rem;
-  -moz-border-radius: 0.5rem;
-  -ms-border-radius: 0.5rem;
-  -o-border-radius: 0.5rem;
-  transition: all 0.6s ease;
-  -webkit-transition: all 0.6s ease;
-  -moz-transition: all 0.6s ease;
-  -ms-transition: all 0.6s ease;
-  -o-transition: all 0.6s ease;
-  transform: translate(-40%);
-  -webkit-transform: translate(-40%);
-  -moz-transform: translate(-40%);
-  -ms-transform: translate(-40%);
-  -o-transform: translate(-40%);
-}
-.sub-menu-head:hover .sub-menu {
-  opacity: 1;
-  visibility: visible;
-  transform: translate(0%);
-  -webkit-transform: translate(0%);
-  -moz-transform: translate(0%);
-  -ms-transform: translate(0%);
-  -o-transform: translate(0%);
-}
-.sub-menu-head a {
-  display: flex;
-  align-items: center;
-}
-.sub-menu-head a .arrow {
-  font-size: 2rem;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-}
-.sub-menu-head:hover a .arrow {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
-  -moz-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  -o-transform: rotate(180deg);
-}
 @media screen and (max-width: 1024px) {
   /* TODO: Edit here now that */
   .sub-menu-head .sub-menu {
@@ -106,9 +42,6 @@ a {
     -ms-transform: translate(0%);
     -o-transform: translate(0%);
     display: none;
-  }
-  .toggel-button {
-    display: block !important;
   }
 }
 /* =================Navbar end======================== */
