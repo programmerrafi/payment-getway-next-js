@@ -146,7 +146,7 @@ const Navbar = () => {
               <input
                 type="text"
                 placeholder="Search..."
-                className="w-full pl-8 pr-12 py-6 rounded-xl bg-popUpBg !opacity-50 border border-blue-500 text-navTextColor"
+                className="w-full pl-8 pr-12 py-6 rounded-xl bg-popUpBg !opacity-50 border border-blue-700 text-navTextColor"
               />
               <BiSearch
                 size={25}
