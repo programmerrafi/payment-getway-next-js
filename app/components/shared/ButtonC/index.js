@@ -1,17 +1,16 @@
 import React from "react";
 
-function ButtonC({ title, className, width, text, ...rest }) {
+function ButtonC({ title, className, width, ...rest }) {
   return (
     <button
       className={` 
-        px-8 py-4 text-colorWhite font-medium
+        px-8 py-[14px] text-textSecondary font-medium font-RadHatText
         rounded-full cursor-pointer
-        bg-btn2 hover:text-white
-        hover:bg-btn2
-        transition-all duration-300 ease-in-out
+        bg-white
+        duration-300 ease-out hover:-translate-y-2 shadow-sm
         ${className}
       `}
-      style={{ fontSize: text, width: width }}
+      style={{ width: width }}
       {...rest}
     >
       {title}

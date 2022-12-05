@@ -6,9 +6,11 @@ import Link from "next/link";
 import ButtonC from "../../components/shared/ButtonC";
 import { HiOutlineMenuAlt3 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
+import { BiSearch } from "react-icons/bi";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+  const [searchBackDrop, setSearchBackDrop] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
   const nav = () => {
@@ -65,11 +67,10 @@ const Navbar = () => {
               className="menu lg:hidden cursor-pointer"
               onClick={() => setOpen((x) => !x)}
             >
-              <HiOutlineMenuAlt3 size={40} className="text-white" />
+              <HiOutlineMenuAlt3 size={40} className="text-navTextColor" />
             </div>
 
             {/* NavList */}
-            {/* bg-teal-700  bg-slate-800*/}
             <div
               className={`${
                 !open &&
@@ -92,22 +93,59 @@ const Navbar = () => {
                 </div>
               </div>
               {/* Nav Menu */}
-              <div className={`nav-menu flex items-center lg:gap-20`}>
-                <ul className="main-menu pl-10 lg:pl-0 flex-col lg:flex-row lg:flex lg:items-center lg:flex-wrap gap-7 space-y-10 lg:space-y-0">
+              <div className={`nav-menu flex items-center lg:gap-28`}>
+                <ul className="main-menu pl-10 lg:pl-0 flex-col lg:flex-row lg:flex lg:items-center lg:flex-wrap gap-10 space-y-10 lg:space-y-0">
                   <NavLi text="Home" />
                   <NavLi text="About" />
                   <DropDownLI text="Services" />
                   <DropDownLI text="Features" />
                   <NavLi text="Contact" />
                 </ul>
-                {/* Button */}
+                {/* Button & Search */}
                 <div className="hidden lg:block">
-                  <ButtonC title="GET STARTED" text="12px" />
+                  <div className="flex items-center gap-8">
+                    <div
+                      className="cursor-pointer p-2"
+                      onClick={() => setSearchBackDrop(true)}
+                    >
+                      <BiSearch
+                        size={25}
+                        className="text-navTextColor hover:text-searchBg"
+                      />
+                    </div>
+                    <ButtonC title="Get Free Trial" className="text-base" />
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </nav>
+
+        {/* BackDrop */}
+        <div
+          className={`${
+            !searchBackDrop &&
+            "absolute hidden lg:block bg-teal-700 lg:top-[-1080px] top-0 lg:!duration-[600ms] ease-in-out z-[995]"
+          } lg:absolute hidden lg:block lg:top-0 lg:left-0 lg:bg-popUpBg opacity-60 relative top-0 z-[1000] w-screen h-screen lg:duration-[1200ms] ease-in-out`}
+          onClick={() => setSearchBackDrop(false)}
+        >
+          <div className="w-full h-screen flex items-center justify-center">
+            <div
+              className="w-1/2 py-2 relative"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <input
+                type="text"
+                placeholder="Search..."
+                className="w-full pl-8 pr-12 py-6 rounded-xl bg-popUpBg text-navTextColor"
+              />
+              <BiSearch
+                size={25}
+                className="text-navTextColor cursor-pointer absolute top-1/2 -translate-y-1/2 right-4"
+              />
+            </div>
+          </div>
+        </div>
       </header>
     </>
   );
