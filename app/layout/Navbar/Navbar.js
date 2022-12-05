@@ -121,12 +121,21 @@ const Navbar = () => {
           </div>
         </nav>
 
+        {/* Animation backDrop */}
+        <div
+          className={`${
+            searchBackDrop &&
+            "bg-popUpBg fixed top-0 left-0 w-full h-full z-[999] !opacity-80 overflow-hidden pb-[100%] rounded-full animate-backDrop hidden lg:block"
+          }`}
+        ></div>
+
         {/* BackDrop */}
         <div
           className={`${
-            !searchBackDrop &&
-            "absolute hidden lg:block bg-teal-700 lg:top-[-1080px] top-0 lg:!duration-[600ms] ease-in-out z-[995]"
-          } lg:absolute hidden lg:block lg:top-0 lg:left-0 lg:bg-popUpBg opacity-60 relative top-0 z-[1000] w-screen h-screen lg:duration-[1200ms] ease-in-out`}
+            !searchBackDrop
+              ? "absolute hidden lg:block lg:top-[-1080px] top-0 lg:!duration-[0ms] z-[995] delay-[0ms]"
+              : "lg:absolute hidden lg:block lg:top-0 lg:left-0 relative top-0 z-[1000] w-screen h-screen lg:duration-[1200ms] ease-in-out delay-300"
+          }`}
           onClick={() => setSearchBackDrop(false)}
         >
           <div className="w-full h-screen flex items-center justify-center">
@@ -137,7 +146,7 @@ const Navbar = () => {
               <input
                 type="text"
                 placeholder="Search..."
-                className="w-full pl-8 pr-12 py-6 rounded-xl bg-popUpBg text-navTextColor"
+                className="w-full pl-8 pr-12 py-6 rounded-xl bg-popUpBg !opacity-50 border border-blue-500 text-navTextColor"
               />
               <BiSearch
                 size={25}

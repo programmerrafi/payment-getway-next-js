@@ -22,7 +22,7 @@ a {
   box-sizing: border-box;
 }
 
-/* Wrapper container */
+/* =========== Wrapper container =========== */
 .container {
   @apply !max-w-[1150px] mx-auto px-5 lg:px-2;
 }
