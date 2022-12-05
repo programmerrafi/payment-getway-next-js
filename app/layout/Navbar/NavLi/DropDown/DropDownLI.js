@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import SUbli from "./SubLI/SUbli";
 import { IoIosArrowDown } from "react-icons/io";
-import { pages, contacts } from "../../../../data/dropDownData";
+import { services, features } from "../../../../data/dropDownData";
 import Link from "next/link";
 
 const DropDownLI = ({ text }) => {
@@ -22,7 +22,7 @@ const DropDownLI = ({ text }) => {
         </div>
       </Link>
       <SUbli
-        pages={text === "PAGES" ? pages : contacts}
+        pages={text === "Services" ? services : features}
         navToggle={navToggle}
         page
       />

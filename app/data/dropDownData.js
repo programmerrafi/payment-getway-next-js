@@ -1,4 +1,4 @@
-export const pages = [
+export const services = [
   {
     id: 1,
     url: "/login",
@@ -25,15 +25,15 @@ export const pages = [
     text: "Services Details",
   },
 ];
-export const contacts = [
+export const features = [
   {
     id: 1,
     url: "/webdesign",
-    text: "CONTACT US-1",
+    text: "Contact us-1",
   },
   {
     id: 2,
     url: "/graphics ",
-    text: "CONTACT US-2",
+    text: "Contact us-2",
   },
 ];

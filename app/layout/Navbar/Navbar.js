@@ -93,7 +93,7 @@ const Navbar = () => {
                 </div>
               </div>
               {/* Nav Menu */}
-              <div className={`nav-menu flex items-center lg:gap-28`}>
+              <div className={`nav-menu flex items-center lg:gap-24`}>
                 <ul className="main-menu pl-10 lg:pl-0 flex-col lg:flex-row lg:flex lg:items-center lg:flex-wrap gap-10 space-y-10 lg:space-y-0">
                   <NavLi text="Home" />
                   <NavLi text="About" />
