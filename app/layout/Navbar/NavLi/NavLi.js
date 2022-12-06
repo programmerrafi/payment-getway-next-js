@@ -5,7 +5,7 @@ const NavLi = ({ text }) => {
   return (
     <li>
       <Link href="#">
-        <div className="text-navTextColor text-base font-RadHatText">
+        <div className="text-colorSecondary lg:text-navTextColor text-sm font-medium lg:font-normal lg:text-base font-RadHatText">
           {text}
         </div>
       </Link>

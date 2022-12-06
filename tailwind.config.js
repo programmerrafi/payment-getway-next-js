@@ -16,6 +16,7 @@ module.exports = {
         colorSecondary: "#00346F",
         searchBg: "#CACFEA",
         popUpBg: "#15172AF7",
+        mobileNavBg: "#F7FAFF",
         navTextColor: "#F1F3F6",
         textSecondary: "#00346F",
         btnSecondary: "#534D9F",

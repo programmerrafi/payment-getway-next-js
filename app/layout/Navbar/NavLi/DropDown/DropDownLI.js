@@ -9,11 +9,11 @@ const DropDownLI = ({ text }) => {
 
   return (
     <li
-      className="group sub-menu-head lg:py-[34px] cursor-pointer relative"
+      className="group lg:py-[34px] cursor-pointer relative"
       onClick={() => setNavToggle(!navToggle)}
     >
       <Link href="#">
-        <div className="flex gap-1 items-center text-navTextColor text-[15px] font-RadHatText capitalize">
+        <div className="flex gap-1 items-center text-colorSecondary font-medium lg:font-normal text-sm lg:text-navTextColor lg:text-[15px] font-RadHatText capitalize">
           {text}
           <IoIosArrowDown
             className="duration-300 ease-linear group-hover:rotate-180"

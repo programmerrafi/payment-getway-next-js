@@ -26,3 +26,16 @@ a {
 .container {
   @apply !max-w-[1150px] mx-auto px-5 lg:px-2;
 }
+
+/* =========== Hide scrollBar Sidebar =========== */
+@layer utilities {
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}

@@ -39,10 +39,11 @@ const Navbar = () => {
         }`}
       > */}
         <nav className={`container`}>
-          <div className="flex justify-between items-center w-full py-5 lg:py-0">
+          <div className="flex justify-between items-center w-full py-3 md:py-5 lg:py-0">
             {/* Logo */}
-            <Link href="/" className="hidden md:block">
-              <div className="">
+            {/* <Link href="/" className="hidden md:block"> */}
+            <Link href="/" className="">
+              <div className="w-[148px] md:w-[170px]">
                 <Image
                   src="/icons/menu-logo.png"
                   width="170"
@@ -74,27 +75,25 @@ const Navbar = () => {
             <div
               className={`${
                 !open &&
-                "absolute bg-teal-700 !left-[-350px] lg:!left-0 transition-all lg:!transition-none !duration-[200ms] ease-in-out lg:!duration-[0ms] z-[1000]"
-              } absolute top-0 left-0 bg-pink-400 lg:relative lg:top-0 z-[999] lg:justify-between w-[350px] h-screen lg:h-auto flex-col flex lg:flex lg:w-auto lg:order-1 lg:bg-transparent transition-all duration-[1500ms] lg:!transition-none ease-in-out lg:!duration-[0ms]`}
+                "absolute bg-teal-700 !left-[-350px] lg:!left-0 transition-all lg:!transition-none !duration-[350ms] ease-in-out lg:!duration-[0ms] z-[1000]"
+              } absolute top-0 left-0 bg-mobileNavBg lg:relative lg:top-0 z-[999] lg:justify-between w-[350px] h-screen lg:h-auto flex-col flex lg:flex lg:w-auto lg:order-1 lg:bg-transparent transition-all duration-[400ms] lg:!transition-none ease-in lg:!duration-[0ms] overflow-y-scroll lg:!overflow-y-visible no-scrollbar`}
             >
               {/* ==== Menu Close Icon & Menu Logo for mobile ==== */}
-              <div className="flex lg:hidden py-8 px-4 justify-between">
+              <div className="flex lg:hidden pt-10 pb-8 px-8 justify-between items-center">
                 <img
-                  // src="/icons/nav-logo.png"
-                  src="https://www.datocms-assets.com/45470/1631026680-logo-react-native.png"
-                  className="w-20 object-contain"
+                  src="/icons/footer-logo.png"
+                  className="w-32 object-contain"
                 />
                 <div
-                  className="cursor-pointer text-colorText lg:hidden flex justify-end p-4"
+                  className="cursor-pointer text-colorText lg:hidden flex justify-end p-3 bg-colorSecondary rounded-full"
                   onClick={() => setOpen(false)}
-                  // onClick={() => console.log("click")}
                 >
-                  <AiOutlineClose size={20} />
+                  <AiOutlineClose size={18} className="text-navTextColor" />
                 </div>
               </div>
               {/* Nav Menu */}
               <div className={`nav-menu flex items-center lg:gap-24`}>
-                <ul className="main-menu pl-10 lg:pl-0 flex-col lg:flex-row lg:flex lg:items-center lg:flex-wrap gap-10 space-y-10 lg:space-y-0">
+                <ul className="main-menu pl-8 lg:pl-0 flex-col lg:flex-row lg:flex lg:items-center lg:flex-wrap lg:gap-10 space-y-8 lg:space-y-0">
                   <NavLi text="Home" />
                   <NavLi text="About" />
                   <DropDownLI text="Services" />
