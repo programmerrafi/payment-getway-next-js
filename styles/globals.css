@@ -24,7 +24,7 @@ a {
 
 /* =========== Wrapper container =========== */
 .container {
-  @apply !max-w-[1150px] mx-auto px-5 lg:px-2;
+  @apply !max-w-[1150px] mx-auto px-5 lg:px-[10px];
 }
 
 .mix-transition {

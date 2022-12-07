@@ -9,7 +9,7 @@ const DropDownLI = ({ text }) => {
 
   return (
     <li
-      className="group lg:py-[34px] cursor-pointer relative"
+      className="group lg:py-[35px] cursor-pointer relative"
       onClick={() => setNavToggle(!navToggle)}
     >
       <Link href="#">

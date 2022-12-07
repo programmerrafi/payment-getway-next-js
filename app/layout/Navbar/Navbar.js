@@ -39,7 +39,6 @@ const Navbar = () => {
         <nav className={`container`}>
           <div className="flex justify-between items-center w-full py-3 md:py-5 lg:py-0">
             {/* Logo */}
-            {/* <Link href="/" className="hidden md:block"> */}
             <Link href="/" className="">
               <div className="w-[148px] md:w-[170px]">
                 <Image
@@ -51,16 +50,6 @@ const Navbar = () => {
                 />
               </div>
             </Link>
-            {/* Logo mobile */}
-            {/* <Link href="/" className="block md:hidden">
-              <div className="w-[65px] sm:w-[90px] object-contain">
-                <img
-                  // src="/icons/logo-mobile.png"
-                  src="https://www.datocms-assets.com/45470/1631026680-logo-react-native.png"
-                  className="w-full h-full"
-                />
-              </div>
-            </Link> */}
             {/* Menu */}
             <div
               className="menu lg:hidden cursor-pointer"
