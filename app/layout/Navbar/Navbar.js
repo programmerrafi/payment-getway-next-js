@@ -30,14 +30,10 @@ const Navbar = () => {
   }, []);
   return (
     <>
+      {/* I can use sticky and top-0 */}
       <header className={`relative z-10 border-b border-[#ffffff24]`}>
-        {/* <header
-        className={`sticky top-0 z-[1005] bg-black w-full ${
-          navbar && "bg-black"
-        }`}
-      > */}
         <nav className={`container`}>
-          <div className="flex justify-between items-center w-full py-3 md:py-5 lg:py-0">
+          <div className="flex justify-between items-center w-full py-3 md:py-4 lg:py-0">
             {/* Logo */}
             <Link href="/" className="">
               <div className="w-[148px] md:w-[170px]">
@@ -62,8 +58,8 @@ const Navbar = () => {
             <div
               className={`${
                 !open &&
-                "absolute bg-teal-700 !left-[-350px] lg:!left-0 transition-all lg:!transition-none !duration-[350ms] ease-in-out lg:!duration-[0ms] z-[1000]"
-              } absolute top-0 left-0 bg-mobileNavBg lg:relative lg:top-0 z-[999] lg:justify-between w-[350px] h-screen lg:h-auto flex-col flex lg:flex lg:w-auto lg:order-1 lg:bg-transparent transition-all duration-[400ms] lg:!transition-none ease-in lg:!duration-[0ms] overflow-y-scroll lg:!overflow-y-visible no-scrollbar`}
+                "fixed bg-teal-700 !left-[-350px] lg:!left-0 transition-all lg:!transition-none !duration-[350ms] ease-in-out lg:!duration-[0ms] z-[1000]"
+              } fixed top-0 left-0 bg-mobileNavBg lg:relative lg:top-0 z-[999] lg:justify-between w-[350px] h-screen lg:h-auto flex-col flex lg:flex lg:w-auto lg:order-1 lg:bg-transparent transition-all duration-[400ms] lg:!transition-none ease-in lg:!duration-[0ms] overflow-y-scroll lg:!overflow-y-visible no-scrollbar`}
             >
               {/* ==== Menu Close Icon & Menu Logo for mobile ==== */}
               <div className="flex lg:hidden pt-10 pb-8 px-8 justify-between items-center">
