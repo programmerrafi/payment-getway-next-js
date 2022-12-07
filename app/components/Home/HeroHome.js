@@ -23,30 +23,31 @@ function HeroHome() {
           <div className="lg:w-[55%]">
             <h1 className="text-[55px] text-white font-RadHatText font-thin leading-[75px] transition-all">
               <span>Everpay </span>
-              <span className="font-medium relative inline-block w-[120px] duration-300 ease-linear align-bottom">
+              <span
+                className={`font-medium relative inline-block text-transition duration-300 ease-out align-bottom overflow-hidden ${
+                  !showText ? "w-[110px]" : "w-[120px]"
+                }`}
+              >
                 <span
                   className={`dynamic-text ${
-                    showText ? "show-text" : "hide-text"
+                    showText
+                      ? "relative rotate-x-0 animate-showText"
+                      : "inline-block rotate-x-180 visible absolute animate-hideText"
                   }`}
                 >
                   Easy{" "}
                 </span>
                 <span
                   className={`dynamic-text ${
-                    showText ? "hide-text" : "show-text"
+                    showText
+                      ? "inline-block rotate-x-180 visible absolute animate-hideText"
+                      : "relative rotate-x-0 animate-showText"
                   }`}
                 >
                   Fast{" "}
                 </span>
               </span>
-              <span
-                className={`relative z-100 ${
-                  !showText && "-ml-2 transition-all"
-                }`}
-              >
-                {" "}
-                Payment Gateway Solution
-              </span>
+              <span className={``}> Payment Gateway Solution</span>
             </h1>
           </div>
           <div className="lg:w-[45%]">Hero Project Image</div>

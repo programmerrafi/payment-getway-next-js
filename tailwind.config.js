@@ -1,4 +1,18 @@
 /** @type {import('tailwindcss').Config} */
+const plugin = require("tailwindcss/plugin");
+
+// Rotate X utilities
+const rotateX = plugin(function ({ addUtilities }) {
+  addUtilities({
+    ".rotate-x-0": {
+      transform: "rotateX(0deg)",
+    },
+    ".rotate-x-180": {
+      transform: "rotateX(180deg)",
+    },
+  });
+});
+
 module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
@@ -10,6 +24,9 @@ module.exports = {
       fontFamily: {
         Montserrat: ["Montserrat", "sans-serif"],
         RadHatText: ["Red Hat Text", "sans-serif"],
+      },
+      transformOrigin: {
+        "top-left-1/2-full": "50% 100%",
       },
       colors: {
         colorPrimary: "#002855",
@@ -29,6 +46,8 @@ module.exports = {
       },
       animation: {
         backDrop: "backDrop 0.6s ease-out forwards",
+        showText: "showText 2.2s",
+        hideText: "hideText 2.2s",
       },
       keyframes: {
         backDrop: {
@@ -54,8 +73,20 @@ module.exports = {
             borderRadius: "0",
           },
         },
+        showText: {
+          "0%": { transform: "rotateX(180deg)", opacity: "0" },
+          "35%": { transform: "rotateX(120deg)", opacity: "0" },
+          "65%": { opacity: "0" },
+          "100%": { transform: "rotateX(360deg)", opacity: "1" },
+        },
+        hideText: {
+          "0%": { transform: "rotateX(0deg)", opacity: "1" },
+          "35%": { transform: "rotateX(-40deg)", opacity: "0" },
+          "65%": { opacity: "0" },
+          "100%": { transform: "rotateX(180deg)", opacity: "0" },
+        },
       },
     },
   },
-  plugins: [],
+  plugins: [rotateX],
 };
