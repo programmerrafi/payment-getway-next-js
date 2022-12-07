@@ -30,9 +30,7 @@ const Navbar = () => {
   }, []);
   return (
     <>
-      <header
-        className={`bg-colorSecondary relative z-10 border-b border-[#ffffff24]`}
-      >
+      <header className={`relative z-10 border-b border-[#ffffff24]`}>
         {/* <header
         className={`sticky top-0 z-[1005] bg-black w-full ${
           navbar && "bg-black"
