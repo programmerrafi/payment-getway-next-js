@@ -48,3 +48,98 @@ a {
   background-color: transparent;
   background-image: linear-gradient(320deg, #002855 0%, #00346f 100%);
 }
+
+/* Animation */
+
+.show-text {
+  position: relative;
+  white-space: nowrap;
+  transform: rotateX(0);
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  animation: jkit-animated-flip-in 2.2s;
+  -webkit-animation: jkit-animated-flip-in 2.2s;
+}
+
+@keyframes jkit-animated-flip-in {
+  0% {
+    transform: rotateX(180deg);
+    opacity: 0;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+  }
+  35% {
+    transform: rotateX(120deg);
+    opacity: 0;
+    -webkit-transform: rotateX(120deg);
+    -moz-transform: rotateX(120deg);
+    -ms-transform: rotateX(120deg);
+    -o-transform: rotateX(120deg);
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(360deg);
+    opacity: 1;
+    -webkit-transform: rotateX(360deg);
+    -moz-transform: rotateX(360deg);
+    -ms-transform: rotateX(360deg);
+    -o-transform: rotateX(360deg);
+  }
+}
+
+.dynamic-text {
+  display: inline-block;
+  top: 0;
+  left: 0;
+  transform-origin: 50% 100%;
+  opacity: 0;
+  z-index: 1;
+}
+.hide-text {
+  display: inline-block;
+  position: absolute;
+  visibility: visible;
+  transform: rotateX(180deg);
+  -webkit-transform: rotateX(180deg);
+  -moz-transform: rotateX(180deg);
+  -ms-transform: rotateX(180deg);
+  -o-transform: rotateX(180deg);
+  animation: jkit-animated-flip-out 2.2s;
+  -webkit-animation: jkit-animated-flip-out 2.2s;
+}
+
+@keyframes jkit-animated-flip-out {
+  0% {
+    transform: rotateX(0);
+    opacity: 1;
+    -webkit-transform: rotateX(0);
+    -moz-transform: rotateX(0);
+    -ms-transform: rotateX(0);
+    -o-transform: rotateX(0);
+  }
+  35% {
+    transform: rotateX(-40deg);
+    opacity: 0;
+    -webkit-transform: rotateX(-40deg);
+    -moz-transform: rotateX(-40deg);
+    -ms-transform: rotateX(-40deg);
+    -o-transform: rotateX(-40deg);
+  }
+  65% {
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(180deg);
+    opacity: 0;
+    -webkit-transform: rotateX(180deg);
+    -moz-transform: rotateX(180deg);
+    -ms-transform: rotateX(180deg);
+    -o-transform: rotateX(180deg);
+  }
+}
