@@ -5,7 +5,7 @@ const SUbli = ({ pages, navToggle, page }) => {
   // when need text content width lg:w-max
   return (
     <div
-      className={`lg:w-[150px] lg:absolute lg:top-[89px] lg:right-1/2 lg:translate-x-1/2 lg:opacity-0 lg:invisible lg:rounded-b-lg lg:duration-700 lg:ease-in-out lg:origin-top lg:scale-y-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:scale-y-100 lg:bg-blue-500 relative w-full opacity-100 visible scale-y-100 hidden lg:!block ${
+      className={`lg:w-[150px] lg:absolute lg:top-[89px] lg:right-1/2 lg:translate-x-1/2 lg:opacity-0 lg:invisible lg:rounded-b-lg lg:duration-700 lg:ease-in-out lg:origin-top lg:scale-y-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:group-hover:scale-y-100 lg:bg-white lg:shadow relative w-full opacity-100 visible scale-y-100 hidden lg:!block ${
         page && navToggle ? "!block" : ""
       } `}
     >
@@ -17,7 +17,7 @@ const SUbli = ({ pages, navToggle, page }) => {
               className="hover:bg-colorPrimary rounded-md transition-all"
             >
               <Link href="#">
-                <div className="lg:font-normal p-3 hover:text-navTextColor text-colorSecondary lg:text-navTextColor font-RadHatText text-sm font-medium lg:text-[15px]">
+                <div className="lg:font-normal p-3 hover:text-navTextColor text-colorSecondary lg:text-colorPrimary font-RadHatText text-sm font-medium lg:text-[15px]">
                   {menu.text}
                 </div>
               </Link>
