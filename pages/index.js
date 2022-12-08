@@ -1,4 +1,9 @@
-import { HeroHome, MerchantJoin, PaymentGateway } from "../app/components/Home";
+import {
+  AboutCompany,
+  HeroHome,
+  MerchantJoin,
+  PaymentGateway,
+} from "../app/components/Home";
 
 export default function Home() {
   return (
@@ -6,6 +11,7 @@ export default function Home() {
       <HeroHome />
       <MerchantJoin />
       <PaymentGateway />
+      <AboutCompany />
     </>
   );
 }
