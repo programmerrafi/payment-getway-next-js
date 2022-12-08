@@ -37,6 +37,7 @@ module.exports = {
         navTextColor: "#F1F3F6",
         smallText: "#CCD0D5",
         textSecondary: "#00346F",
+        textGray: "#A6ADB6",
         btnSecondary: "#534D9F",
         blackSecondary: "#151518",
         black3: "#1C1B1B",
