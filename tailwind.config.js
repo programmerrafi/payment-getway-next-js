@@ -28,6 +28,9 @@ module.exports = {
       transformOrigin: {
         "top-left-1/2-full": "50% 100%",
       },
+      boxShadow: {
+        "3xl": "0px 0px 10px 0px rgb(0 0 0 / 10%)",
+      },
       colors: {
         colorPrimary: "#002855",
         colorSecondary: "#00346F",

@@ -1,12 +1,14 @@
 import React from "react";
 import CountUp from "react-countup";
+import { CompanyLogos } from "../../data/merchentLogo";
+import MerchantLogo from "../Cart/MerchantLogo";
 
 function MerchantJoin() {
   return (
     <section className="relative pt-[50px] md:pt-[80px] lg:pt-[100px]">
       <div className="container">
         {/* Merchant join counter */}
-        <section className="flex items-center flex-wrap md:flex-nowrap gap-8 md:gap-14 lg:gap-20">
+        <section className="flex items-center flex-wrap md:flex-nowrap gap-8 md:gap-14 lg:gap-20 mb-[30px]">
           {/* counter */}
           <div className="w-full md:w-[25%]">
             <h1 className="text-colorPrimary text-[45px] md:text-[50px] font-light font-RadHatText flex items-start gap-2 justify-center">
@@ -18,7 +20,7 @@ function MerchantJoin() {
             </p>
           </div>
           {/* Merchant Info */}
-          <h1 className="font-RadHatText italic text-base sm:text-lg md:text-xl font-normal sm:font-light text-textGray w-full text-center lg:text-left md:w-[75%]">
+          <h1 className="font-RadHatText italic text-base sm:text-lg md:text-xl font-normal sm:font-light text-textGray w-full text-center md:text-left md:w-[75%]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
             tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo dolore
             magna aliqua erat libero condimentu. Incididunt ut labore et dolore
@@ -26,7 +28,13 @@ function MerchantJoin() {
           </h1>
         </section>
         {/* Merchant Company Logo */}
-        <section className=""></section>
+        <section className="mt-[30px] relative w-full">
+          <div className="flex flex-wrap gap-1 justify-between pt-10">
+            {CompanyLogos.map((logo) => (
+              <MerchantLogo key={logo.id} img={logo.img} />
+            ))}
+          </div>
+        </section>
       </div>
     </section>
   );
