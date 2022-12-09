@@ -5,11 +5,12 @@ function Icons({
   size = "32",
   className = "",
   textClass = "",
+  iDiv = "",
   text = null,
 }) {
   const IconName = name;
   return (
-    <div className="flex items-center gap-2">
+    <div className={`flex items-center gap-2 ${iDiv}`}>
       {IconName !== null && (
         <IconName
           size={Number(size)}
