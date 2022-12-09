@@ -5,6 +5,7 @@ import Icons from "../shared/Icons";
 import ButtonC from "../shared/ButtonC";
 
 function AboutCompany() {
+  console.log("hello world");
   return (
     <section className="relative py-[150px]">
       <div className="container">
