@@ -30,6 +30,7 @@ module.exports = {
       },
       boxShadow: {
         "3xl": "0px 0px 10px 0px rgb(0 0 0 / 10%)",
+        "4xl": "0px 0px 0px 0px rgb(0 52 111 / 1)",
       },
       colors: {
         colorPrimary: "#002855",
@@ -53,6 +54,7 @@ module.exports = {
         backDrop: "backDrop 0.6s ease-out forwards",
         showText: "showText 2.2s",
         hideText: "hideText 2.2s",
+        before: "before 3s infinite",
       },
       keyframes: {
         backDrop: {
@@ -90,8 +92,18 @@ module.exports = {
           "65%": { opacity: "0" },
           "100%": { transform: "rotateX(180deg)", opacity: "0" },
         },
+        before: {
+          "70%": {
+            boxShadow: "0px 0px 0px 15px rgb(0 52 111 / 1)",
+            opacity: "0",
+          },
+          "100%": {
+            boxShadow: "0px 0px 0px 0px rgb(0 52 111 / 1)",
+            opacity: "0",
+          },
+        },
       },
     },
   },
-  plugins: [rotateX],
+  plugins: [rotateX, require("tailwindcss-animation-delay")],
 };

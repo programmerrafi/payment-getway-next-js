@@ -53,3 +53,24 @@ a {
 .dynamic-text {
   @apply inline-block top-0 left-0 opacity-0 z-10 origin-top-left-1/2-full;
 }
+
+/* Popup styles */
+
+@media only screen and (max-width: 767px) {
+  iframe {
+    width: 650px;
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 681px) {
+  iframe {
+    width: 450px;
+    height: 350px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  iframe {
+    width: 350px;
+    height: 200px;
+  }
+}
