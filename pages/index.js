@@ -1,5 +1,6 @@
 import {
   AboutCompany,
+  EasyPayment,
   HeroHome,
   MerchantJoin,
   PaymentGateway,
@@ -12,6 +13,7 @@ export default function Home() {
       <MerchantJoin />
       <PaymentGateway />
       <AboutCompany />
+      <EasyPayment />
     </>
   );
 }

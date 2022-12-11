@@ -48,11 +48,11 @@ function AboutCompany() {
             </div>
           </div>
           {/* Right */}
-          <div className="lg:w-[45%]">
+          <div className="lg:w-[45%] font-RadHatText">
             <h3 className=" text-lg text-colorSecondary font-medium">
               About Company
             </h3>
-            <h1 className="text-[40px] md:text-[44px] lg:text-[48px] text-colorPrimary py-4 font-light">
+            <h1 className="text-[40px] md:text-[44px] lg:text-[48px] text-colorPrimary leading-[62px] py-4 font-light">
               Help Every Phase Of Your Business Growth
             </h1>
             <p className="text-textGray text-sm md:text-base font-light font-RadHatText lg:flex flex-col mb-5">

@@ -54,8 +54,7 @@ a {
   @apply inline-block top-0 left-0 opacity-0 z-10 origin-top-left-1/2-full;
 }
 
-/* Popup styles */
-
+/* =========== Youtube Iframe tag =========== */
 @media only screen and (max-width: 767px) {
   iframe {
     width: 650px;
