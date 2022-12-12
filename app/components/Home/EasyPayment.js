@@ -9,12 +9,12 @@ import CircleProgress from "../Cart/CircleProgress";
 function EasyPayment() {
   return (
     <section className="relative">
-      <div className="flex">
+      <div className="flex flex-wrap lg:flex-nowrap">
         {/* left */}
-        <div className="w-[50%] rounded-tl-[300px] overflow-hidden">
+        <div className="lg:w-[50%] w-full rounded-tl-[300px] overflow-hidden">
           {/* background image */}
           <div
-            className="w-[50%] h-full absolute top-0 left-0 rounded-tl-[300px]"
+            className="lg:w-[50%] w-full h-full absolute top-0 left-0 rounded-tl-[300px]"
             style={setBackgroundImage("images/platfrom-bg.jpeg", {
               backgroundPosition: "30% 0px",
             })}
@@ -68,7 +68,7 @@ function EasyPayment() {
           </div>
         </div>
         {/* Right */}
-        <div className="w-[50%] p-20 bg-colorSecondary font-RadHatText">
+        <div className="lg:w-[50%] p-20 bg-colorSecondary font-RadHatText relative z-50">
           <h3 className=" text-lg text-white font-normal font-RadHatText">
             Our Experience
           </h3>

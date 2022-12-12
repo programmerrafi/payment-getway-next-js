@@ -5,7 +5,6 @@ import YouTubeVideo from "../../Cart/YouTubeVideo";
 
 const PopUp = () => {
   const global = useVarContext();
-  console.log(global?.popUp);
   return (
     <div
       className="fixed top-0 w-full h-screen hidden z-[1000] bg-popUpBg"
