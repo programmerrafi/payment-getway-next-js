@@ -9,14 +9,14 @@ function AboutCompany() {
   const global = useVarContext();
 
   return (
-    <section className="relative py-[150px]">
+    <section className="py-[150px]">
       <div className="container">
         <div className="flex gap-16 flex-wrap lg:flex-nowrap">
           {/* left */}
           <div className="lg:w-[55%]">
-            <div className="flex justify-between items-start h-[100px] relative z-10">
+            <div className="flex justify-between items-start h-[100px]">
               {/* image */}
-              <div className="p-4 bg-white">
+              <div className="p-4 bg-white relative -z-[100] lg:z-10">
                 <img
                   src="images/girl-online-1.jpeg"
                   alt="girl"
@@ -39,7 +39,7 @@ function AboutCompany() {
                 </h2>
               </div>
             </div>
-            <div className="rounded-lg overflow-hidden">
+            <div className="rounded-lg overflow-hidden relative -z-[111] lg:z-0">
               <img
                 src="images/shopping-img.jpeg"
                 alt="shopping"

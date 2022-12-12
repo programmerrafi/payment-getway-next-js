@@ -73,3 +73,7 @@ a {
     height: 200px;
   }
 }
+
+.bg-position {
+  background-position: top !important ;
+}
