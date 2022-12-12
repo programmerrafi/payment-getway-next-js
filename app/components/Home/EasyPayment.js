@@ -1,11 +1,11 @@
 import React from "react";
-import Icons from "../shared/Icons";
 import { setBackgroundImage } from "../utils/helpers";
 import { IoIosNotificationsOutline } from "react-icons/io";
 import { GiCircularSawblade } from "react-icons/gi";
 import { GiProgression } from "react-icons/gi";
 import CircleProgress from "../Cart/CircleProgress";
 import ButtonC from "../shared/ButtonC";
+import PaymentCard from "../Cart/PaymentCard";
 
 function EasyPayment() {
   return (
@@ -15,61 +15,37 @@ function EasyPayment() {
         <div className="lg:w-[50%] w-full rounded-tl-[100px] md:rounded-tl-[200px] lg:rounded-tl-[300px] overflow-hidden -z-10 lg:z-0">
           {/* background image */}
           <div
-            className="lg:w-[50%] w-full h-full absolute top-0 left-0 rounded-tl-[100px] md:rounded-tl-[200px] lg:rounded-tl-[300px] bg-position !bg-auto md:!bg-contain lg:!bg-cover"
+            className="lg:w-[50%] w-full lg:h-full md:h-[44%] h-[39%] absolute top-0 left-0 rounded-tl-[100px] md:rounded-tl-[200px] lg:rounded-tl-[300px] sm:!bg-cover !bg-center"
             style={setBackgroundImage("images/platfrom-bg.jpeg", {
               backgroundPosition: "30% 0px",
             })}
           ></div>
           {/* info */}
           <div className="relative">
-            <div className="lg:pt-[19rem] pt-[8rem] pb-16 pr-24 lg:pr-12 pl-10">
+            <div className="lg:pt-[19rem] pt-[10rem] pb-16 pr-4 sm:pr-24 lg:pr-12 pl-10">
               {/* Card 1 */}
-              <div className="flex justify-end">
-                <div className="bg-white rounded-lg py-6 px-5 w-[220px]">
-                  <Icons
-                    name={IoIosNotificationsOutline}
-                    text="Anomaly Detection"
-                    size="35"
-                    iDiv="!gap-4"
-                    textClass="!text-[22px] leading-[30px] !text-colorSecondary !font-medium"
-                    className="!text-white"
-                    iClassName="bg-colorSecondary p-3 rounded-md"
-                  />
-                </div>
+              <div className="flex justify-end mt-16">
+                <PaymentCard
+                  text="Anomaly Detection"
+                  name={IoIosNotificationsOutline}
+                />
               </div>
               {/* Card 2 */}
               <div className="flex justify-start">
-                <div className="bg-white rounded-lg py-6 px-5 w-[220px]">
-                  <Icons
-                    name={GiCircularSawblade}
-                    text="Platform Payments"
-                    size="35"
-                    iDiv="!gap-4"
-                    textClass="!text-[22px] leading-[30px] !text-colorSecondary !font-medium"
-                    className="!text-white"
-                    iClassName="bg-colorSecondary p-3 rounded-md"
-                  />
-                </div>
+                <PaymentCard
+                  text="Platform Payments"
+                  name={GiCircularSawblade}
+                />
               </div>
               {/* Card 3 */}
-              <div className="flex justify-center pt-16 lg:pt-36">
-                <div className="bg-white rounded-lg py-6 px-5 w-[220px]">
-                  <Icons
-                    name={GiProgression}
-                    text="Recurring Payments"
-                    size="35"
-                    iDiv="!gap-4"
-                    textClass="!text-[22px] leading-[30px] !text-colorSecondary !font-medium"
-                    className="!text-white"
-                    iClassName="bg-colorSecondary p-3 rounded-md"
-                  />
-                </div>
+              <div className="md:flex justify-center pt-16 lg:pt-36 hidden md:block">
+                <PaymentCard text="Recurring Payments" name={GiProgression} />
               </div>
             </div>
           </div>
         </div>
         {/* Right */}
-        <div className="lg:w-[50%] p-20 bg-colorSecondary font-RadHatText">
+        <div className="lg:w-[50%] lg:p-20 md:p-12 py-12 px-6 bg-colorSecondary font-RadHatText">
           <h3 className=" text-lg text-white font-normal font-RadHatText">
             Our Experience
           </h3>
@@ -82,11 +58,11 @@ function EasyPayment() {
             ad minim veniam, quis nostrud xercitation ullamco dolore.
           </p>
           {/* Counter circle */}
-          <div className="flex gap-20 mb-14">
+          <div className="flex gap-10 md:gap-20 mb-14 flex-col md:flex-row">
             {/* Left Circle */}
             <div className="font-RadHatText lg:w-[40%]">
               {/* Countdown Timer */}
-              <div className="w-[42%] mt-8 lg:w-[63%] mb-4">
+              <div className="w-[25%] md:w-[42%] mt-8 lg:w-[63%] mb-4">
                 <CircleProgress bWith={2} pNumber={87} />
               </div>
               <h1 className="font-normal text-white text-[24px] pb-2">
@@ -99,7 +75,7 @@ function EasyPayment() {
             {/* Right Circle */}
             <div className="font-RadHatText lg:w-[40%]">
               {/* Countdown Timer */}
-              <div className="w-[42%] mt-8 lg:w-[63%] mb-4">
+              <div className="w-[25%] md:w-[42%] mt-8 lg:w-[63%] mb-4">
                 <CircleProgress bWith={2} pNumber={95} />
               </div>
               <h1 className="font-normal text-white text-[24px] pb-2">
