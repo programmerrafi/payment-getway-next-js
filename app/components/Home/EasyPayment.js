@@ -8,7 +8,6 @@ import ButtonC from "../shared/ButtonC";
 import PaymentCard from "../Cart/PaymentCard";
 
 function EasyPayment() {
-  console.log("AREGENTINA");
   return (
     <section className="relative">
       <div className="flex flex-wrap lg:flex-nowrap">
@@ -53,13 +52,13 @@ function EasyPayment() {
           <h1 className="text-[40px] md:text-[44px] lg:text-[48px] text-white leading-[62px] py-4 font-light">
             Our Roadmap To Reach Your Easy Payment Solution
           </h1>
-          <p className="text-textGray text-sm md:text-base font-light font-RadHatText lg:flex flex-col mb-5">
+          <p className="text-textGray text-sm md:text-base font-light font-RadHatText lg:flex flex-col mb-2 lg:mb-5">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud xercitation ullamco dolore.
           </p>
           {/* Counter circle */}
-          <div className="flex gap-10 md:gap-20 mb-14 flex-col md:flex-row">
+          <div className="flex gap-0 md:gap-10 lg:gap-20 mb-8 md:mb-14 flex-col md:flex-row">
             {/* Left Circle */}
             <div className="font-RadHatText lg:w-[40%]">
               {/* Countdown Timer */}
@@ -76,7 +75,7 @@ function EasyPayment() {
             {/* Right Circle */}
             <div className="font-RadHatText lg:w-[40%]">
               {/* Countdown Timer */}
-              <div className="w-[25%] md:w-[42%] mt-8 lg:w-[63%] mb-4">
+              <div className="w-[25%] md:w-[42%] mt-4 lg:mt-8 lg:w-[63%] mb-4">
                 <CircleProgress bWith={2} pNumber={95} />
               </div>
               <h1 className="font-normal text-white text-[24px] pb-2">
