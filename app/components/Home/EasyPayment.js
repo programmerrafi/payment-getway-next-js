@@ -8,6 +8,7 @@ import ButtonC from "../shared/ButtonC";
 import PaymentCard from "../Cart/PaymentCard";
 
 function EasyPayment() {
+  console.log("No working today");
   return (
     <section className="relative">
       <div className="flex flex-wrap lg:flex-nowrap">
