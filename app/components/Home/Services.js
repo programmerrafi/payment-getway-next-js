@@ -4,7 +4,7 @@ import Service from "../Cart/Service";
 
 function Services() {
   return (
-    <section className="relative py-[100px]">
+    <section className="relative py-[60px] md:py-[100px]">
       <div className="container">
         {/* Text information */}
         <div className="font-RadHatText">
