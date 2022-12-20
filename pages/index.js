@@ -4,6 +4,7 @@ import {
   HeroHome,
   MerchantJoin,
   PaymentGateway,
+  Services,
 } from "../app/components/Home";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <PaymentGateway />
       <AboutCompany />
       <EasyPayment />
+      <Services />
     </>
   );
 }
