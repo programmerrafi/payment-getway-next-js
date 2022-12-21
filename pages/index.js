@@ -1,5 +1,6 @@
 import {
   AboutCompany,
+  Clients,
   EasyPayment,
   HeroHome,
   MerchantJoin,
@@ -16,6 +17,7 @@ export default function Home() {
       <AboutCompany />
       <EasyPayment />
       <Services />
+      <Clients />
     </>
   );
 }
