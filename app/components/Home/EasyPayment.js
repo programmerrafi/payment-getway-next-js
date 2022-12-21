@@ -15,7 +15,7 @@ function EasyPayment() {
         <div className="lg:w-[50%] w-full rounded-tl-[100px] md:rounded-tl-[200px] lg:rounded-tl-[300px] overflow-hidden -z-10 lg:z-0">
           {/* background image */}
           <div
-            className="lg:w-[50%] w-full lg:h-full md:h-[48%] h-[41%] absolute top-0 left-0 rounded-tl-[100px] md:rounded-tl-[200px] lg:rounded-tl-[300px] sm:!bg-cover !bg-center"
+            className="lg:w-[50%] w-full lg:h-full md:h-[48%] h-[41%] absolute top-0 left-0 rounded-tl-[100px] md:rounded-tl-[200px] lg:rounded-tl-[300px] sm:!bg-cover"
             style={setBackgroundImage("images/platfrom-bg.jpeg", {
               backgroundPosition: "30% 0px",
             })}
