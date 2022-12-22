@@ -12,40 +12,14 @@ function Clients() {
     <section className="relative">
       <div className="flex flex-wrap lg:flex-nowrap">
         {/* left */}
-        <div className="lg:w-[50%] w-full rounded-tl-[100px] md:rounded-tl-[200px] lg:rounded-tl-[300px] overflow-hidden -z-10 lg:z-0">
-          {/* background image */}
+        <div className="lg:w-[50%] lg:p-20 md:p-12 py-12 px-6 bg-colorSecondary font-RadHatText relative overflow-hidden z-10">
           <div
-            className="lg:w-[50%] w-full lg:h-full md:h-[48%] h-[41%] absolute top-0 left-0 rounded-tl-[100px] md:rounded-tl-[200px] lg:rounded-tl-[300px] sm:!bg-cover"
-            style={setBackgroundImage("images/platfrom-bg.jpeg", {
-              backgroundPosition: "30% 0px",
+            className="w-full h-full absolute top-0 left-0 mix-transition -z-10"
+            style={setBackgroundImage("images/clien-bg-1.jpeg", {
+              backgroundPosition: "25% 0",
+              opacity: 0.1,
             })}
           ></div>
-          {/* info */}
-          <div className="relative">
-            <div className="lg:pt-[19rem] pt-[10rem] pb-16 pr-4 sm:pr-24 lg:pr-12 pl-10">
-              {/* Card 1 */}
-              <div className="flex justify-end mt-16">
-                <PaymentCard
-                  text="Anomaly Detection"
-                  name={IoIosNotificationsOutline}
-                />
-              </div>
-              {/* Card 2 */}
-              <div className="flex justify-start">
-                <PaymentCard
-                  text="Platform Payments"
-                  name={GiCircularSawblade}
-                />
-              </div>
-              {/* Card 3 */}
-              <div className="md:flex justify-center pt-16 lg:pt-36 hidden md:block">
-                <PaymentCard text="Recurring Payments" name={GiProgression} />
-              </div>
-            </div>
-          </div>
-        </div>
-        {/* Right */}
-        <div className="lg:w-[50%] lg:p-20 md:p-12 py-12 px-6 bg-colorSecondary font-RadHatText">
           <h3 className=" text-lg text-white font-normal font-RadHatText">
             Our Experience
           </h3>
@@ -88,6 +62,21 @@ function Clients() {
           </div>
           {/* Button */}
           <ButtonC title="Get Free Trail" />
+        </div>
+        {/* right */}
+        <div className="lg:w-[50%] w-full rounded-br-[100px] md:rounded-br-[200px] lg:rounded-br-[300px] overflow-hidden -z-10 lg:z-0 relative">
+          {/* background image */}
+          <img
+            src="images/client-bg-2.jpeg"
+            alt=""
+            className="w-full h-full object-cover"
+          />
+          {/* <div
+            className="w-full md:h-full h-[41%] rounded-br-[100px] md:rounded-br-[200px] lg:rounded-br-[300px] sm:!bg-cover"
+            style={setBackgroundImage("images/client-bg-2.jpeg", {
+              backgroundPosition: "30% 0px",
+            })}
+          ></div> */}
         </div>
       </div>
     </section>

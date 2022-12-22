@@ -45,7 +45,14 @@ function EasyPayment() {
           </div>
         </div>
         {/* Right */}
-        <div className="lg:w-[50%] lg:p-20 md:p-12 py-12 px-6 bg-colorSecondary font-RadHatText">
+        <div className="lg:w-[50%] lg:p-20 md:p-12 py-12 px-6 bg-colorSecondary font-RadHatText relative overflow-hidden z-10">
+          <div
+            className="w-full h-full absolute top-0 left-0 mix-transition -z-10"
+            style={setBackgroundImage("images/clien-bg-1.jpeg", {
+              backgroundPosition: "25% 0",
+              opacity: 0.1,
+            })}
+          ></div>
           <h3 className=" text-lg text-white font-normal font-RadHatText">
             Our Experience
           </h3>
