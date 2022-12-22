@@ -22,7 +22,9 @@
     "react-move": "^6.5.0",
     "react-redux": "^8.0.5",
     "react-youtube": "^10.1.0",
-    "tailwindcss-animation-delay": "^1.0.7"
+    "tailwindcss-animation-delay": "^1.0.7",
+    "slick-carousel": "^1.8.1",
+    "react-slick": "^0.28.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.13",
