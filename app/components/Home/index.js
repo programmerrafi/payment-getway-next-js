@@ -6,3 +6,4 @@ export { default as EasyPayment } from "./EasyPayment";
 export { default as Services } from "./Services";
 export { default as Clients } from "./Clients";
 export { default as Blog } from "./Blog";
+export { default as Contact } from "./Contact";

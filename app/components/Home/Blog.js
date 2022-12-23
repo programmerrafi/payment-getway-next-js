@@ -4,7 +4,7 @@ import ButtonC from "../shared/ButtonC";
 
 function Blog() {
   return (
-    <section className="relative py-[100px]">
+    <section className="relative py-[60px] md:py-[100px]">
       <div className="container font-RadHatText">
         <h3 className=" text-lg text-colorSecondary font-medium mb-2">
           Our Blog

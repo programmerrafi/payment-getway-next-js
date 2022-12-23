@@ -2,6 +2,7 @@ import {
   AboutCompany,
   Blog,
   Clients,
+  Contact,
   EasyPayment,
   HeroHome,
   MerchantJoin,
@@ -20,6 +21,7 @@ export default function Home() {
       <Services />
       <Clients />
       <Blog />
+      <Contact />
     </>
   );
 }
