@@ -6,14 +6,14 @@ import { MdLocationOn } from "react-icons/md";
 
 function Contact() {
   return (
-    <section className="relative">
+    <section className="relative z-10">
       <div className="container">
-        <div className="relative z-0 hero-gradient mix-transition py-10 px-14 rounded-2xl md:rounded-full overflow-hidden">
+        <div className="relative z-0 hero-gradient mix-transition py-[42px] px-16 rounded-2xl md:rounded-full overflow-hidden">
           <div
             className="w-full h-full absolute top-0 left-0 mix-transition -z-10"
             style={setBackgroundImage("images/hero-bg-img.jpeg", {
               backgroundPosition: "left center",
-              opacity: 0.1,
+              opacity: 0.27,
             })}
           ></div>
           {/* contact info */}
