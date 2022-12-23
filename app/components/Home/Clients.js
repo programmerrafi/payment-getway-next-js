@@ -7,7 +7,7 @@ function Clients() {
     <section className="relative">
       <div className="flex flex-wrap lg:flex-nowrap">
         {/* left */}
-        <div className="lg:w-[50%] w-full lg:py-[90px] lg:px-20 md:py-16 md:px-14 py-12 px-6 bg-colorSecondary font-RadHatText relative z-10">
+        <div className="lg:w-[50%] w-full lg:py-[90px] lg:px-20 md:py-16 md:px-14 py-12 px-6 bg-colorSecondary font-RadHatText relative z-[1]">
           <div
             className="w-full h-full absolute top-0 left-0 mix-transition -z-10"
             style={setBackgroundImage("images/clien-bg-1.jpeg", {

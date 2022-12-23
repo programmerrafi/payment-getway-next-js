@@ -1,10 +1,8 @@
 import React from "react";
-import Link from "next/link";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { clients } from "../../data/clientsData";
-import { AiFillStar } from "react-icons/ai";
 
 function ClientSlider() {
   const settings = {
