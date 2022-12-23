@@ -1,5 +1,6 @@
 import {
   AboutCompany,
+  Blog,
   Clients,
   EasyPayment,
   HeroHome,
@@ -18,6 +19,7 @@ export default function Home() {
       <EasyPayment />
       <Services />
       <Clients />
+      <Blog />
     </>
   );
 }
