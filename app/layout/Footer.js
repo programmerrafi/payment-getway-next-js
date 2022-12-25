@@ -2,6 +2,7 @@ import React from "react";
 import { setBackgroundImage } from "../components/utils/helpers";
 
 function Footer() {
+  console.log("hello footer!");
   return (
     <footer className="relative mix-transition footer-gradient pb-10 pt-[220px] z-0 -mt-[135px]">
       <div
