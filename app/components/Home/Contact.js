@@ -6,7 +6,7 @@ import { MdLocationOn } from "react-icons/md";
 
 function Contact() {
   return (
-    <section className="relative z-10">
+    <section className="relative z-[1]">
       <div className="container">
         <div className="relative z-0 hero-gradient mix-transition py-[42px] px-16 rounded-2xl md:rounded-full overflow-hidden">
           <div

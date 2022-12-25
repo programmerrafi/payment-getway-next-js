@@ -63,7 +63,7 @@ function ClientSlider() {
             return (
               <div
                 key={client.id}
-                className="!w-full md:!w-[95%] lg:!w-[340px]"
+                className="!w-full md:!w-[95%] lg:!w-[350px]"
               >
                 <div className="p-10 bg-white rounded-lg mx-2 overflow-hidden">
                   {/* Icons */}
