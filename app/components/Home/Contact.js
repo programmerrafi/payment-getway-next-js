@@ -5,6 +5,7 @@ import { RiMessage2Fill } from "react-icons/ri";
 import { MdLocationOn } from "react-icons/md";
 
 function Contact() {
+  console.log("did nothing");
   return (
     <section className="relative z-[1]">
       <div className="container">
